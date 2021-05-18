@@ -1,0 +1,47 @@
+.column-3{
+    width: 75%;
+    float: left;
+}
+
+.column-2{
+    width: 50%;
+    float: left;
+}
+
+.column-1{
+    width: 25%;
+    float: left;
+}
+
+button.calc-button{
+    width: 100%;
+    height: 100px;
+    float: left;
+    background-color: rgb(13, 2, 24);
+    border: 2px solid rgb(194, 30, 172);
+    font-size: 32px;
+    color: rgb(187, 238, 191);
+
+}
+
+input.result{
+    height: 100px;
+    width: 100%;
+    border: none;
+    text-align: right;
+    font-size: 32px;
+    position: relative;
+    max-width: 100vw;
+    margin-right: 50px;
+    float: right;
+    color: rgb(13, 2, 24);
+}
+
+.floaty-last{
+    position: absolute;
+    right: 50px;
+    z-index: 99;
+    top: 10px;
+    color: #aaa;
+}
+
