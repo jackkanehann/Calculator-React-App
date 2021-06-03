@@ -45,6 +45,15 @@ class App extends Component {
     }
   }
 
+  changeSign = (symbol) => {
+    let {current, previous, nextIsReset} = this.state;
+
+    current = eval(String(current * -1));
+    this.setState({current, previous, nextIsReset});
+  }
+
+
+
   render(){
 
     const buttons = [
@@ -69,6 +78,9 @@ class App extends Component {
       {symbol: '0', cols: 2, action: this.addToCurrent},
       {symbol: '.', cols: 1, action: this.addToCurrent},
       {symbol: '=', cols: 1, action: this.calculate},
+
+      {symbol: '+/-', cols: 4, action: this.changeSign},
+      
       
 
     ];
